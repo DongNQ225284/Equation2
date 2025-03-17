@@ -11,15 +11,15 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var edtA: EditText
-        lateinit var edtB: EditText
-        lateinit var edtC: EditText
-        lateinit var btnSubmit: Button
-        lateinit var tvResult: TextView
-        lateinit var tvX1: TextView
-        lateinit var tvX2: TextView
+    lateinit var edtA: EditText
+    lateinit var edtB: EditText
+    lateinit var edtC: EditText
+    lateinit var btnSubmit: Button
+    lateinit var tvResult: TextView
+    lateinit var tvX1: TextView
+    lateinit var tvX2: TextView
 
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             solve()
         }
     }
+
     private fun solve() {
         val a = edtA.text.toString().toDoubleOrNull()
         val b = edtB.text.toString().toDoubleOrNull()
@@ -73,5 +74,5 @@ class MainActivity : AppCompatActivity() {
             tvX1.text = "x1 = $x1"
             tvX2.text = "x2 = $x2"
         }
-
+    }
 }

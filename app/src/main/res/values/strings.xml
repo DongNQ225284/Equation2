@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QuadraticEquation</string>
+    <string name="cinA">Nhập A</string>
+    <string name="cinB">Nhập B</string>
+    <string name="cinC">Nhập C</string>
+    <string name="submit">Submit</string>
 </resources>
